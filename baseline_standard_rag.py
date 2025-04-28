@@ -8,8 +8,7 @@ from prompt import query_2_v2
 
 if __name__ == "__main__":
     # Load PDF document
-    #pdf_path = "/Users/michaelsilverii/projects2025/AIHealthRAG/src-llamaindex/input_docs/SQ Cleft_Redacted.pdf"
-    pdf_path = "/Users/michaelsilverii/projects2025/AIHealthRAG/src-llamaindex/input_docs/EP Mandible fx_Redacted.pdf"
+    pdf_path = "path to pdf"
     documents = [load_cleaned_pdf(pdf_path)]
 
     # Set global settings
