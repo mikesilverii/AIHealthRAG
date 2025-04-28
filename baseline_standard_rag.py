@@ -41,5 +41,5 @@ if __name__ == "__main__":
     retrieved_nodes = retriever.retrieve(query_bundle)
 
     # for i, node in enumerate(retrieved_nodes):
-    #     print(f"\n🔹 Top {i+1} | Score: {node.score:.4f}")
+    #     print(f"\n Top {i+1} | Score: {node.score:.4f}")
     #     print(f"Chunk:\n{node.node.get_content()[:500]}...")
