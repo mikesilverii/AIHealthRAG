@@ -8,15 +8,7 @@ from ocr_load import ocr_pdf_full
 from llamaparse import llama_parse
 
 # --- Setup ---
-pdf_path = "/Users/michaelsilverii/projects2025/AIHealthRAG/src-llamaindex/input_docs/EM Nevus_Redacted.pdf"
-#documents = [load_cleaned_pdf(pdf_path)]
-#documents = [ocr_pdf_full(pdf_path)]
-#nodes = splitter.get_nodes_from_documents(documents)
-# text = ocr_pdf_full(pdf_path)
-# nodes = splitter.split_text(text)
-# Settings.llm = llm
-# Settings.embed_model = embedding_model
-# index = VectorStoreIndex(nodes=nodes)
+pdf_path = ""
 index = llama_parse(pdf_path)
 retriever = index.as_retriever(similarity_top_k=25)
 
